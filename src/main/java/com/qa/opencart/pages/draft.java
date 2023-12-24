@@ -1,8 +1,10 @@
 package com.qa.opencart.pages;
 
-public class draft {
-	
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
-    public interface MyInterface {
-  
-    } }
+public class draft {
+private void syso() {
+	// TODO Auto-generated method stub
+
+}
+}
