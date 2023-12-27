@@ -27,6 +27,7 @@ public class ExtendReportListener implements ITestListener {
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
 	private static ExtentReports extentReports;
 	
+	
 
 	private static ExtentReports init() {
 
@@ -39,6 +40,8 @@ public class ExtendReportListener implements ITestListener {
 				// fail to create directory
 				e.printStackTrace();
 			}
+			
+			
 		}
 		
 		extentReports = new ExtentReports();

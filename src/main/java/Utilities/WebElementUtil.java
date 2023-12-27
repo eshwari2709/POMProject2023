@@ -15,15 +15,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.qa.opencart.factory.DriverFactory;
+
 import io.qameta.allure.Step;
 
 public class WebElementUtil {
 	public static WebDriver driver;
 	public static Select select;
 	public static WebDriverWait wait;
+	private JavaScriptUtil jsUtil;
 	
 	public WebElementUtil(WebDriver driver) {
 		this.driver = driver;
+		jsUtil = new JavaScriptUtil(driver);
 	}
 
 	private Select select(By locator) {
@@ -81,24 +85,32 @@ public class WebElementUtil {
 	 * empID = By.id("input-email"); By empName = By.name("name");
 	 * @param locator
 	 * @return
+	 * ADDITION - highlight the webelement with flash from jsUtil class if prop.highlight = true
 	 */
 // getElement
 	public WebElement getElement(By locator) {
-		WebElement element = null;
-		try {
-			element = driver.findElement(locator);
-			System.out.println("Element is found ...." + locator);
-		} catch (NoSuchElementException e) {
-			System.out.println("Element not found...." + locator);
-			// element = waitforElementVisible(locator, Default_Time_Out);
-			/// add method for wait
+		WebElement element = driver.findElement(locator);
+		if(Boolean.parseBoolean(DriverFactory.highlight)) {
+			jsUtil.flash(element);
 		}
 		return element;
+				
+		/*
+		 * WebElement element = null; try { element = driver.findElement(locator);
+		 * System.out.println("Element is found ...." + locator); } catch
+		 * (NoSuchElementException e) { System.out.println("Element not found...." +
+		 * locator); // element = waitforElementVisible(locator, Default_Time_Out); ///
+		 * add method for wait } return element;
+		 */
 	}
 //getElement Overloaded
 	public WebElement getElement(String locator, String locatorValue)
 	{
-		return driver.findElement(getBy(locator,locatorValue));
+		WebElement element =  driver.findElement(getBy(locator,locatorValue));
+		if(Boolean.parseBoolean(DriverFactory.highlight)) {
+			jsUtil.flash(element);
+		}
+		return element;
 	}
 
 //SendKeys

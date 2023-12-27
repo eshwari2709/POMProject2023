@@ -22,9 +22,11 @@ public class DriverFactory {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static OptionsManager optionsManager;
+	
 	//Thread local - Java
 	public static ThreadLocal<WebDriver>
- tlDriver = new ThreadLocal<WebDriver>();
+	tlDriver = new ThreadLocal<WebDriver>();
+	public static String highlight = null;
 	
 	/**
 	 * This method is used to launch the browser n the basis of given browserName
@@ -35,6 +37,7 @@ public class DriverFactory {
 		String browserName = prop.getProperty("browser"); // from config.properties
 		//String browserName = System.getProperty("browser")); //when run from  ?
 		optionsManager = new OptionsManager(prop); // from OptionsManager.java
+		highlight = prop.getProperty("highlight");  //highlight on webelement Y/N
 		
 		switch (browserName.toLowerCase().trim()) {
 		case "chrome":
