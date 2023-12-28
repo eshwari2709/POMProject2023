@@ -36,7 +36,7 @@ public class BaseTest {
 		prop = df.initProp();
 		//supplying .xml value to properties file by giving preferrence of .xml input
 		if(browserName!=null) {
-			prop.setProperty("browser", browserName);
+			prop.setProperty("browser", browserName); // need to set - cos DriverFactory refers prop file hence override i/p if .xml contains value 
 		}
 		driver = df.initDriver(prop);
 		loginPage = new LoginPage(driver);

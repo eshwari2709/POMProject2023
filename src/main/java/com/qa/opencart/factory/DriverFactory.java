@@ -35,10 +35,10 @@ public class DriverFactory {
 	 */
 	public static WebDriver initDriver(Properties prop) {
 		String browserName = prop.getProperty("browser"); // from config.properties
-		//String browserName = System.getProperty("browser")); //when run from  ?
+		//String browserName = System.getProperty("browser")); //when run from maven input for different browser
 		optionsManager = new OptionsManager(prop); // from OptionsManager.java
 		highlight = prop.getProperty("highlight");  //highlight on webelement Y/N
-		
+		System.out.println("Your browser name is "+browserName);
 		switch (browserName.toLowerCase().trim()) {
 		case "chrome":
 			//driver = new ChromeDriver(optionsManager.getChromeOptions());
@@ -53,6 +53,7 @@ public class DriverFactory {
 			break;
 		case "edge":
 			driver = new EdgeDriver();
+			tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
 			break;
 		case "safari":
 			driver = new SafariDriver();
@@ -79,7 +80,6 @@ public class DriverFactory {
 	public Properties initProp() {
 		// mvn clean install -Denv="qa" --> pick data from config.qa.properties
 		// mvn clean install --> not giving any input, handle it
-		
 		prop = new Properties();
 		FileInputStream ip = null;
 		String envName = System.getProperty("env");

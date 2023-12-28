@@ -23,8 +23,10 @@ public class LoginPageTest extends BaseTest {
 	@Test (priority = 1)
 	public void loginPgTitle() throws TimeoutException
 	{
+		System.out.println("The thread ID for Chrome is "+ Thread.currentThread().getId());
 		String actTitle = loginPage.getLoginPageTitle();
-		//softAssert.assertEquals(actTitle, AppConstants.ACCOUNTS_PAGE_TITLE);
+		softAssert.assertEquals(actTitle, AppConstants.ACCOUNTS_PAGE_TITLE);
+	
 	}
 	
 	@Description ("URL login page validation....")

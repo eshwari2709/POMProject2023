@@ -54,6 +54,8 @@ public class LoginPage {
 	@Step("Login to application UN {0} PWD {1}")
 	public AccountsPage doLogin(String strUN, String strpwd)
 	{
+		System.out.println("UN "+strUN);
+		System.out.println("PWD "+strpwd);
 		eleUtil.doSendKeys(userName, strUN);
 		eleUtil.doSendKeys(password, strpwd);
 		eleUtil.doClick(loginBtn);

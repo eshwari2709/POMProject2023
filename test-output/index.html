@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Opencart App Test Regression Suite</span>
+              <span class="suite-name border-passed">Opencart App Test Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" class="hide-methods failed suite-Opencart_App_Test_Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Opencart_App_Test_Regression_Suite -->
-                      <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" class="show-methods failed suite-Opencart_App_Test_Regression_Suite"> (show)</a> <!-- show-methods failed suite-Opencart_App_Test_Regression_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Opencart_App_Test_Regression_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Opencart_App_Test_Regression_Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -148,48 +134,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Opencart_App_Test_Regression_Suite" class="panel Opencart_App_Test_Regression_Suite">
-          <div class="suite-Opencart_App_Test_Regression_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.qa.opencart.test.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.opencart.test.LoginPageTest.loginTest(LoginPageTest.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Opencart_App_Test_Regression_Suite-class-failed -->
           <div class="suite-Opencart_App_Test_Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -235,12 +179,12 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Opencart App Test Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;4&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Opencart App Test Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;4&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.opencart.listeners.ExtendReportListener&quot;/&gt;
     &lt;listener class-name=&quot;com.qa.opencart.listeners.AllureReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Login Page Test&quot; verbose=&quot;4&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Login Page Test&quot; verbose=&quot;4&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.opencart.test.LoginPageTest&quot;/&gt;
@@ -283,32 +227,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
+data.setCell(0, 1, 'loginPgTitle')
 data.setCell(0, 2, 'com.qa.opencart.test.LoginPageTest')
-data.setCell(0, 3, 3661);
+data.setCell(0, 3, 254);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginPgTitle')
+data.setCell(1, 1, 'loginPgURLTest')
 data.setCell(1, 2, 'com.qa.opencart.test.LoginPageTest')
-data.setCell(1, 3, 300);
+data.setCell(1, 3, 192);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'forgotLinkTest')
 data.setCell(2, 2, 'com.qa.opencart.test.LoginPageTest')
-data.setCell(2, 3, 246);
+data.setCell(2, 3, 104);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'isRegisterLink')
 data.setCell(3, 2, 'com.qa.opencart.test.LoginPageTest')
-data.setCell(3, 3, 237);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginPgURLTest')
-data.setCell(4, 2, 'com.qa.opencart.test.LoginPageTest')
-data.setCell(4, 3, 70);
+data.setCell(3, 3, 95);
 window.suiteTableData['Opencart_App_Test_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Opencart_App_Test_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 645 ms</span>
               <div id="times-div-Opencart_App_Test_Regression_Suite">
               </div> <!-- times-div-Opencart_App_Test_Regression_Suite -->
             </div> <!-- times-div -->
@@ -341,29 +281,23 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginPgTitle</span>
-                <span class="method-start">8763 ms</span>
+                <span class="method-start">5012 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginPgURLTest</span>
-                <span class="method-start">9372 ms</span>
+                <span class="method-start">5012 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">forgotLinkTest</span>
-                <span class="method-start">9468 ms</span>
+                <span class="method-start">5412 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">isRegisterLink</span>
-                <span class="method-start">9766 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginTest</span>
-                <span class="method-start">10012 ms</span>
+                <span class="method-start">5412 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14116 ms</span>
+                <span class="method-start">6342 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
