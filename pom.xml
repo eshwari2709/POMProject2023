@@ -91,7 +91,7 @@
 						<reuseForks>true</reuseForks>
 						<suiteXmlFiles>
 							<suiteXmlFile>
-								src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
+								src/test/resources/testrunners/testNgregression.xml</suiteXmlFile>
 						</suiteXmlFiles>
 
 						<argLine>
