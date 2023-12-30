@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Opencart App Test Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
+<suite thread-count="1" parallel="tests" name="Failed suite [Opencart App Test Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
   <listeners>
     <listener class-name="com.qa.opencart.listeners.ExtendReportListener"/>
-    <listener class-name="com.qa.opencart.listeners.AllureReportListener"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="Login Page Test(failed)" verbose="4">
+  <test thread-count="1" parallel="tests" name="RegisterPageTest(failed)" verbose="4">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.opencart.test.LoginPageTest">
+      <class name="com.qa.opencart.test.RegisterPageTest">
         <methods>
+          <include name="doLogin"/>
           <include name="setup"/>
-          <include name="loginTest"/>
+          <include name="UserRegisterTest" invocation-numbers="0 1 2"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.opencart.test.LoginPageTest -->
+      </class> <!-- com.qa.opencart.test.RegisterPageTest -->
     </classes>
-  </test> <!-- Login Page Test(failed) -->
+  </test> <!-- RegisterPageTest(failed) -->
 </suite> <!-- Failed suite [Opencart App Test Regression Suite] -->

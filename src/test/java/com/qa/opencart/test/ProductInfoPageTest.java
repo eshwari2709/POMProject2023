@@ -18,7 +18,6 @@ public class ProductInfoPageTest extends BaseTest {
 		accPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-
 	@DataProvider
 	public Object[][] getSearchData() {
 		return new Object[][] {
@@ -26,11 +25,9 @@ public class ProductInfoPageTest extends BaseTest {
 			{"MacBook", "MacBook Air", 4},
 			{"iMac", "iMac", 3},
 			{"Samsung", "Samsung SyncMaster 941BW", 1}
-
 		};
 	}
-	
-	
+		
 //	@DataProvider
 //	public Object[][] getSearchExcelTestData() {
 //		return ExcelUtil.getTestData(AppConstants.PRODUCT_DATA_SHEET_NAME);

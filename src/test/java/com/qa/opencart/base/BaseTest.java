@@ -22,7 +22,7 @@ public class BaseTest {
 	protected WebDriver driver;
 	protected LoginPage loginPage;
 	protected AccountsPage accPage;
-	protected RegisterPage regPage;
+	protected RegisterPage registerPage;
 	protected SearchResultsPage searchPage;
 	protected ProductInfoPage prodInfoPage;
 	protected SoftAssert softAssert;

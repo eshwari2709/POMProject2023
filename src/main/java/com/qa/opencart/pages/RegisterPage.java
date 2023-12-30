@@ -32,7 +32,7 @@ public class RegisterPage {
 
 	public boolean userRegisteration(String firstName, String lastName, String email, String telephone, String password,
 			String subscribe) {
-		eleUtil.waitForVisibilityOfElement(this.firstName, AppConstants.MEDIUM_DEFAULT_WAIT);
+		eleUtil.waitForVisibilityOfElement(this.firstName, AppConstants.MEDIUM_DEFAULT_WAIT).sendKeys(firstName);
 		eleUtil.doSendKeys(this.lastName, lastName);
 		eleUtil.doSendKeys(this.email, email);
 		eleUtil.doSendKeys(this.telephone, telephone);
