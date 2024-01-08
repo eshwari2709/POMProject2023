@@ -3,7 +3,7 @@
 <suite name="Opencart App Test Regression Suite" thread-count="1"	parallel="tests" verbose="4">
 	<listeners>
 		<listener class-name="com.qa.opencart.listeners.ExtendReportListener"></listener>
-		<!--<listener class-name="com.qa.opencart.listeners.AllureReportListener"></listener>-->
+		<listener class-name="com.qa.opencart.listeners.AllureReportListener"></listener>
 	</listeners>
 	
 <!--	<test name="Login Page Test">

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Opencart_App_Test_Regression_Suite" class="navigator-link ">
-                    <span>C:\Users\prabh\eclipse-workspace\POMProject\src\test\resources\testrunners\testNgregression.xml</span>
+                    <span>C:\Users\prabh\eclipse-workspace\POMProject\src\test\resources\testrunners\testng_regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -109,12 +109,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.RegisterPageTest" class="method navigator-link" hash-for-method="UserRegisterTest(Tom, T, 9900990044, test@123, yes)">UserRegisterTest(Tom, T, 9900990044, test@123, yes)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.RegisterPageTest" class="method navigator-link" hash-for-method="UserRegisterTest(Sibi, R, 9900990011, test@123, yes)">UserRegisterTest(Sibi, R, 9900990011, test@123, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.RegisterPageTest" class="method navigator-link" hash-for-method="UserRegisterTest(Sibi, R, 9900990011, test@123, yes)">UserRegisterTest(Sibi, R, 9900990011, test@123, yes)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.RegisterPageTest" class="method navigator-link" hash-for-method="UserRegisterTest(Tom, T, 9900990044, test@123, yes)">UserRegisterTest(Tom, T, 9900990044, test@123, yes)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Opencart_App_Test_Regression_Suite -->
@@ -145,18 +145,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="UserRegisterTest(Tom, T, 9900990044, test@123, yes)">
-                  </a> <!-- UserRegisterTest(Tom, T, 9900990044, test@123, yes) -->
-                  <span class="method-name">UserRegisterTest</span>
-                  <span class="parameters">(Tom, T, 9900990044, test@123, yes)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="UserRegisterTest(Sibi, R, 9900990011, test@123, yes)">
                   </a> <!-- UserRegisterTest(Sibi, R, 9900990011, test@123, yes) -->
                   <span class="method-name">UserRegisterTest</span>
                   <span class="parameters">(Sibi, R, 9900990011, test@123, yes)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserRegisterTest(Tom, T, 9900990044, test@123, yes)">
+                  </a> <!-- UserRegisterTest(Tom, T, 9900990044, test@123, yes) -->
+                  <span class="method-name">UserRegisterTest</span>
+                  <span class="parameters">(Tom, T, 9900990044, test@123, yes)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,7 +164,7 @@
         </div> <!-- panel Opencart_App_Test_Regression_Suite -->
         <div panel-name="test-xml-Opencart_App_Test_Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\prabh\eclipse-workspace\POMProject\src\test\resources\testrunners\testNgregression.xml</span>
+            <span class="header-content">C:\Users\prabh\eclipse-workspace\POMProject\src\test\resources\testrunners\testng_regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -173,6 +173,7 @@
 &lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Opencart App Test Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;4&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.opencart.listeners.ExtendReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.qa.opencart.listeners.AllureReportListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;RegisterPageTest&quot; verbose=&quot;4&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
@@ -221,20 +222,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'UserRegisterTest')
 data.setCell(0, 2, 'com.qa.opencart.test.RegisterPageTest')
-data.setCell(0, 3, 12824);
+data.setCell(0, 3, 11286);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'UserRegisterTest')
 data.setCell(1, 2, 'com.qa.opencart.test.RegisterPageTest')
-data.setCell(1, 3, 11889);
+data.setCell(1, 3, 10702);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'UserRegisterTest')
 data.setCell(2, 2, 'com.qa.opencart.test.RegisterPageTest')
-data.setCell(2, 3, 11573);
+data.setCell(2, 3, 10511);
 window.suiteTableData['Opencart_App_Test_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Opencart_App_Test_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 39 seconds</span>
               <div id="times-div-Opencart_App_Test_Regression_Suite">
               </div> <!-- times-div-Opencart_App_Test_Regression_Suite -->
             </div> <!-- times-div -->
@@ -267,23 +268,23 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">doLogin</span>
-                <span class="method-start">6258 ms</span>
+                <span class="method-start">4969 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">UserRegisterTest(Eshwari, K, 9900990099, Pass@123, yes)</span>
-                <span class="method-start">7226 ms</span>
+                <span class="method-start">6305 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UserRegisterTest(Tom, T, 9900990044, test@123, yes)</span>
-                <span class="method-start">20225 ms</span>
+                <span class="method-start">17785 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UserRegisterTest(Sibi, R, 9900990011, test@123, yes)</span>
-                <span class="method-start">31810 ms</span>
+                <span class="method-start">28304 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">43708 ms</span>
+                <span class="method-start">39018 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
