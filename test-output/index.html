@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" class="show-methods failed suite-Opencart_App_Test_Regression_Suite"> (show)</a> <!-- show-methods failed suite-Opencart_App_Test_Regression_Suite -->
                     </span>
                     <div class="method-list-content failed suite-Opencart_App_Test_Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
@@ -118,7 +123,7 @@
                     <div class="method-list-content passed suite-Opencart_App_Test_Regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.RegisterPageTest" class="method navigator-link" hash-for-method="UserRegisterTest(Eshwari, K, 9900990099, Pass@123, yes)">UserRegisterTest(Eshwari, K, 9900990099, Pass@123, yes)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.LoginPageTest" class="method navigator-link" hash-for-method="forgotLinkTest">forgotLinkTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,7 +138,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.LoginPageTest" class="method navigator-link" hash-for-method="isRegisterLink">isRegisterLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.LoginPageTest" class="method navigator-link" hash-for-method="loginPgTitle">loginPgTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.LoginPageTest" class="method navigator-link" hash-for-method="loginPgTitle">loginPgTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Opencart_App_Test_Regression_Suite" title="com.qa.opencart.test.LoginPageTest" class="method navigator-link" hash-for-method="loginPgURLTest">loginPgURLTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -193,6 +213,40 @@
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.qa.opencart.test.LoginPageTest.loginTest(LoginPageTest.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Opencart_App_Test_Regression_Suite-class-failed -->
           <div class="suite-Opencart_App_Test_Regression_Suite-class-passed">
@@ -206,6 +260,20 @@
                   <a name="forgotLinkTest">
                   </a> <!-- forgotLinkTest -->
                   <span class="method-name">forgotLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgotLinkTest">
+                  </a> <!-- forgotLinkTest -->
+                  <span class="method-name">forgotLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isRegisterLink">
+                  </a> <!-- isRegisterLink -->
+                  <span class="method-name">isRegisterLink</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -224,25 +292,23 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="loginPgTitle">
+                  </a> <!-- loginPgTitle -->
+                  <span class="method-name">loginPgTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="loginPgURLTest">
                   </a> <!-- loginPgURLTest -->
                   <span class="method-name">loginPgURLTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Opencart_App_Test_Regression_Suite-class-passed -->
-          <div class="suite-Opencart_App_Test_Regression_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.opencart.test.RegisterPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="UserRegisterTest(Eshwari, K, 9900990099, Pass@123, yes)">
-                  </a> <!-- UserRegisterTest(Eshwari, K, 9900990099, Pass@123, yes) -->
-                  <span class="method-name">UserRegisterTest</span>
-                  <span class="parameters">(Eshwari, K, 9900990099, Pass@123, yes)</span>
+                  <a name="loginPgURLTest">
+                  </a> <!-- loginPgURLTest -->
+                  <span class="method-name">loginPgURLTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -256,23 +322,23 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Opencart App Test Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;4&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Opencart App Test Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;4&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.opencart.listeners.ExtendReportListener&quot;/&gt;
     &lt;listener class-name=&quot;com.qa.opencart.listeners.AllureReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Login Page Test&quot; verbose=&quot;4&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Login Page Test&quot; verbose=&quot;4&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.opencart.test.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login Page Test --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;RegisterPageTest&quot; verbose=&quot;4&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;Login Page Test2&quot; verbose=&quot;4&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.opencart.test.RegisterPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.opencart.test.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- RegisterPageTest --&gt;
+  &lt;/test&gt; &lt;!-- Login Page Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Opencart App Test Regression Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -287,7 +353,7 @@
                 <span class="test-name">Login Page Test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">RegisterPageTest (1 class)</span>
+                <span class="test-name">Login Page Test2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -313,31 +379,47 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'UserRegisterTest')
-data.setCell(0, 2, 'com.qa.opencart.test.RegisterPageTest')
-data.setCell(0, 3, 27138);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.qa.opencart.test.LoginPageTest')
+data.setCell(0, 3, 6789);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.qa.opencart.test.LoginPageTest')
-data.setCell(1, 3, 5776);
+data.setCell(1, 3, 6219);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'forgotLinkTest')
+data.setCell(2, 1, 'loginPgTitle')
 data.setCell(2, 2, 'com.qa.opencart.test.LoginPageTest')
-data.setCell(2, 3, 921);
+data.setCell(2, 3, 3207);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginPgTitle')
+data.setCell(3, 1, 'forgotLinkTest')
 data.setCell(3, 2, 'com.qa.opencart.test.LoginPageTest')
-data.setCell(3, 3, 507);
+data.setCell(3, 3, 934);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'isRegisterLink')
+data.setCell(4, 1, 'forgotLinkTest')
 data.setCell(4, 2, 'com.qa.opencart.test.LoginPageTest')
-data.setCell(4, 3, 463);
+data.setCell(4, 3, 664);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'loginPgURLTest')
 data.setCell(5, 2, 'com.qa.opencart.test.LoginPageTest')
-data.setCell(5, 3, 226);
+data.setCell(5, 3, 367);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'isRegisterLink')
+data.setCell(6, 2, 'com.qa.opencart.test.LoginPageTest')
+data.setCell(6, 3, 269);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'isRegisterLink')
+data.setCell(7, 2, 'com.qa.opencart.test.LoginPageTest')
+data.setCell(7, 3, 239);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginPgTitle')
+data.setCell(8, 2, 'com.qa.opencart.test.LoginPageTest')
+data.setCell(8, 3, 116);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginPgURLTest')
+data.setCell(9, 2, 'com.qa.opencart.test.LoginPageTest')
+data.setCell(9, 3, 91);
 window.suiteTableData['Opencart_App_Test_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Opencart_App_Test_Regression_Suite'}
 return data;
 }
@@ -373,53 +455,61 @@ return data;
                 <span class="method-name">setup(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.opencart.test.RegisterPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">doLogin</span>
-                <span class="method-start">37569 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">UserRegisterTest(Eshwari, K, 9900990099, Pass@123, yes)</span>
-                <span class="method-start">39733 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">68020 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.opencart.test.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginPgTitle</span>
-                <span class="method-start">85679 ms</span>
+                <span class="method-start">34017 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginPgURLTest</span>
-                <span class="method-start">86289 ms</span>
+                <span class="method-start">37912 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">forgotLinkTest</span>
-                <span class="method-start">86528 ms</span>
+                <span class="method-start">38305 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">isRegisterLink</span>
-                <span class="method-start">87460 ms</span>
+                <span class="method-start">39248 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginTest</span>
-                <span class="method-start">87933 ms</span>
+                <span class="method-start">39496 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">95276 ms</span>
+                <span class="method-start">47115 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">loginPgTitle</span>
+                <span class="method-start">59641 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPgURLTest</span>
+                <span class="method-start">59768 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">forgotLinkTest</span>
+                <span class="method-start">59868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">isRegisterLink</span>
+                <span class="method-start">60539 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest</span>
+                <span class="method-start">60819 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67541 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -12,13 +12,25 @@
 			<class name="com.qa.opencart.test.LoginPageTest" />
 		</classes>
 	</test>
+		<test name="Login Page Test2">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.opencart.test.LoginPageTest" />
+		</classes>
+	</test>
+	<!-- <test name="Login Page Test2">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="com.qa.opencart.test.LoginPageTest" />
+		</classes>
+	</test>-->
 	
-	<test name="RegisterPageTest">
+<!--	<test name="RegisterPageTest">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.opencart.test.RegisterPageTest" />
 		</classes>
-	</test>
+	</test>-->
 	
 	
 </suite>

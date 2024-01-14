@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-14T14:25:39 IST" name="Opencart App Test Regression Suite" finished-at="2024-01-14T14:27:17 IST" duration-ms="98025">
+  <suite started-at="2024-01-14T15:42:27 IST" name="Opencart App Test Regression Suite" finished-at="2024-01-14T15:43:36 IST" duration-ms="69304">
     <groups>
     </groups>
-    <test started-at="2024-01-14T14:25:39 IST" name="RegisterPageTest" finished-at="2024-01-14T14:26:50 IST" duration-ms="71021">
-      <class name="com.qa.opencart.test.RegisterPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.opencart.test.RegisterPageTest@3610f277]" started-at="2024-01-14T14:25:39 IST" name="setup" finished-at="2024-01-14T14:26:17 IST" duration-ms="37466" status="PASS">
+    <test started-at="2024-01-14T15:42:27 IST" name="Login Page Test2" finished-at="2024-01-14T15:43:16 IST" duration-ms="49680">
+      <class name="com.qa.opencart.test.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:42:27 IST" name="setup" finished-at="2024-01-14T15:43:00 IST" duration-ms="33418" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,77 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="doLogin()[pri:0, instance:com.qa.opencart.test.RegisterPageTest@3610f277]" started-at="2024-01-14T14:26:17 IST" name="doLogin" finished-at="2024-01-14T14:26:19 IST" duration-ms="2072" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogin -->
-        <test-method signature="UserRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.test.RegisterPageTest@3610f277]" started-at="2024-01-14T14:26:19 IST" name="UserRegisterTest" data-provider="getUserRegData" finished-at="2024-01-14T14:26:46 IST" duration-ms="27138" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Eshwari]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[K]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[9900990099]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Pass@123]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[yes]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserRegisterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.RegisterPageTest@3610f277]" started-at="2024-01-14T14:26:47 IST" name="tearDown" finished-at="2024-01-14T14:26:50 IST" duration-ms="2941" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.opencart.test.RegisterPageTest -->
-    </test> <!-- RegisterPageTest -->
-    <test started-at="2024-01-14T14:25:39 IST" name="Login Page Test" finished-at="2024-01-14T14:27:17 IST" duration-ms="98025">
-      <class name="com.qa.opencart.test.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.opencart.test.LoginPageTest@9c73fff]" started-at="2024-01-14T14:25:39 IST" name="setup" finished-at="2024-01-14T14:27:05 IST" duration-ms="85676" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginPgTitle()[pri:1, instance:com.qa.opencart.test.LoginPageTest@9c73fff]" started-at="2024-01-14T14:27:05 IST" name="loginPgTitle" finished-at="2024-01-14T14:27:06 IST" duration-ms="507" status="PASS">
+        <test-method signature="loginPgTitle()[pri:1, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:01 IST" name="loginPgTitle" finished-at="2024-01-14T15:43:04 IST" duration-ms="3207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPgTitle -->
-        <test-method signature="loginPgURLTest()[pri:2, instance:com.qa.opencart.test.LoginPageTest@9c73fff]" started-at="2024-01-14T14:27:06 IST" name="loginPgURLTest" finished-at="2024-01-14T14:27:06 IST" duration-ms="226" status="PASS">
+        <test-method signature="loginPgURLTest()[pri:2, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:04 IST" name="loginPgURLTest" finished-at="2024-01-14T15:43:05 IST" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPgURLTest -->
-        <test-method signature="forgotLinkTest()[pri:3, instance:com.qa.opencart.test.LoginPageTest@9c73fff]" started-at="2024-01-14T14:27:06 IST" name="forgotLinkTest" finished-at="2024-01-14T14:27:07 IST" duration-ms="921" status="PASS">
+        <test-method signature="forgotLinkTest()[pri:3, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:05 IST" name="forgotLinkTest" finished-at="2024-01-14T15:43:06 IST" duration-ms="934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotLinkTest -->
-        <test-method signature="isRegisterLink()[pri:4, instance:com.qa.opencart.test.LoginPageTest@9c73fff]" started-at="2024-01-14T14:27:07 IST" name="isRegisterLink" finished-at="2024-01-14T14:27:07 IST" duration-ms="463" status="PASS">
+        <test-method signature="isRegisterLink()[pri:4, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:06 IST" name="isRegisterLink" finished-at="2024-01-14T15:43:06 IST" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isRegisterLink -->
-        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.test.LoginPageTest@9c73fff]" started-at="2024-01-14T14:27:07 IST" name="loginTest" finished-at="2024-01-14T14:27:13 IST" duration-ms="5776" status="FAIL">
+        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:06 IST" name="loginTest" finished-at="2024-01-14T15:43:13 IST" duration-ms="6789" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -122,7 +68,76 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginPageTest@9c73fff]" started-at="2024-01-14T14:27:15 IST" name="tearDown" finished-at="2024-01-14T14:27:17 IST" duration-ms="2688" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:14 IST" name="tearDown" finished-at="2024-01-14T15:43:16 IST" duration-ms="2510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.opencart.test.LoginPageTest -->
+    </test> <!-- Login Page Test2 -->
+    <test started-at="2024-01-14T15:42:27 IST" name="Login Page Test" finished-at="2024-01-14T15:43:36 IST" duration-ms="69304">
+      <class name="com.qa.opencart.test.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:42:27 IST" name="setup" finished-at="2024-01-14T15:43:26 IST" duration-ms="59639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginPgTitle()[pri:1, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:26 IST" name="loginPgTitle" finished-at="2024-01-14T15:43:26 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPgTitle -->
+        <test-method signature="loginPgURLTest()[pri:2, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:26 IST" name="loginPgURLTest" finished-at="2024-01-14T15:43:26 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPgURLTest -->
+        <test-method signature="forgotLinkTest()[pri:3, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:26 IST" name="forgotLinkTest" finished-at="2024-01-14T15:43:27 IST" duration-ms="664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotLinkTest -->
+        <test-method signature="isRegisterLink()[pri:4, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:27 IST" name="isRegisterLink" finished-at="2024-01-14T15:43:27 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isRegisterLink -->
+        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:27 IST" name="loginTest" finished-at="2024-01-14T15:43:34 IST" duration-ms="6219" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.opencart.test.LoginPageTest.loginTest(LoginPageTest.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:34 IST" name="tearDown" finished-at="2024-01-14T15:43:36 IST" duration-ms="1708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
