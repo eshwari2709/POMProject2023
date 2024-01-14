@@ -1,5 +1,4 @@
 package com.qa.opencart.factory;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -7,7 +6,6 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -89,7 +87,6 @@ public class DriverFactory {
 
 	/**
 	 * to run on remote/grid
-	 * 
 	 * @param browserName
 	 */
 	private static void initRemoteDriver(String browserName) {
@@ -104,10 +101,10 @@ public class DriverFactory {
 				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getChromeOptions()));
 				break;
 			case "edge":
-				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getChromeOptions()));
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getEdgeOptions()));
 				break;
 			case "firefox":
-				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getChromeOptions()));
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getFirefoxOptions()));
 				break;
 			default:
 				System.out.println("Please pass valid browser : cannot find in remote machine");
@@ -123,7 +120,6 @@ public class DriverFactory {
 
 	/**
 	 * This method is used to retrieve properties input from config file
-	 * 
 	 * @return this returns property value requested by sending 'key'
 	 */
 	public Properties initProp() {
@@ -163,7 +159,6 @@ public class DriverFactory {
 
 	/****
 	 * Take Screenshots Implemented in ExtendReportListener.java
-	 * 
 	 * @param methodName
 	 * @return
 	 */
