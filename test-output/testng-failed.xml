@@ -5,18 +5,6 @@
     <listener class-name="com.qa.opencart.listeners.ExtendReportListener"/>
     <listener class-name="com.qa.opencart.listeners.AllureReportListener"/>
   </listeners>
-  <test thread-count="4" parallel="tests" name="Login Page Test2(failed)" verbose="4">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.qa.opencart.test.LoginPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="loginTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.opencart.test.LoginPageTest -->
-    </classes>
-  </test> <!-- Login Page Test2(failed) -->
   <test thread-count="4" parallel="tests" name="Login Page Test(failed)" verbose="4">
     <parameter name="browser" value="firefox"/>
     <classes>
@@ -29,4 +17,32 @@
       </class> <!-- com.qa.opencart.test.LoginPageTest -->
     </classes>
   </test> <!-- Login Page Test(failed) -->
+  <test thread-count="4" parallel="tests" name="Login Page Test2(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.opencart.test.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.test.LoginPageTest -->
+    </classes>
+  </test> <!-- Login Page Test2(failed) -->
+  <test thread-count="4" parallel="tests" name="Login Page Test3(failed)" verbose="4">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.qa.opencart.test.LoginPageTest">
+        <methods>
+          <include name="isRegisterLink"/>
+          <include name="setup"/>
+          <include name="forgotLinkTest"/>
+          <include name="loginTest"/>
+          <include name="loginPgTitle"/>
+          <include name="loginPgURLTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.test.LoginPageTest -->
+    </classes>
+  </test> <!-- Login Page Test3(failed) -->
 </suite> <!-- Failed suite [Opencart App Test Regression Suite] -->

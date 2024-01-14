@@ -17,7 +17,7 @@ public class OptionsManager {
 		this.prop = prop;
 	}
 	public ChromeOptions getChromeOptions()
-	{
+		{
 		co= new ChromeOptions();
 		if(Boolean.parseBoolean(prop.getProperty("headless").trim()))
 			co.addArguments("--headlesss");
@@ -29,7 +29,7 @@ public class OptionsManager {
 		return co;
 		}
 	public EdgeOptions getEdgeOptions()
-	{
+		{
 		eo= new EdgeOptions();
         eo.addArguments("--disable-notifications");
 		if(Boolean.parseBoolean(prop.getProperty("headless").trim()))
@@ -41,9 +41,8 @@ public class OptionsManager {
 			}
 		return eo;
 		}
-	
-		public FirefoxOptions getFirefoxOptions()
-		{
+	public FirefoxOptions getFirefoxOptions()
+			{
 			fo= new FirefoxOptions();
 			if(Boolean.parseBoolean(prop.getProperty("headless").trim()))
 				fo.addArguments("--headlesss");
@@ -51,9 +50,7 @@ public class OptionsManager {
 				fo.addArguments("--incognito");
 			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
 				co.setCapability("browserName", "firefox");
-				}
-
-			return fo;
 			}
-			
+			return fo;
+			}			
 	}

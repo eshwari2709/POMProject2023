@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
+<testng-results ignored="0" total="16" passed="9" failed="2" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-14T15:42:27 IST" name="Opencart App Test Regression Suite" finished-at="2024-01-14T15:43:36 IST" duration-ms="69304">
+  <suite started-at="2024-01-14T15:54:33 IST" name="Opencart App Test Regression Suite" finished-at="2024-01-14T15:57:34 IST" duration-ms="181484">
     <groups>
     </groups>
-    <test started-at="2024-01-14T15:42:27 IST" name="Login Page Test2" finished-at="2024-01-14T15:43:16 IST" duration-ms="49680">
-      <class name="com.qa.opencart.test.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:42:27 IST" name="setup" finished-at="2024-01-14T15:43:00 IST" duration-ms="33418" status="PASS">
+    <test started-at="2024-01-14T15:54:33 IST" name="RegisterPageTest" finished-at="2024-01-14T15:55:27 IST" duration-ms="54077">
+      <class name="com.qa.opencart.test.RegisterPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.opencart.test.RegisterPageTest@78d9f51b]" started-at="2024-01-14T15:54:33 IST" name="setup" finished-at="2024-01-14T15:54:55 IST" duration-ms="22553" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,65 +18,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginPgTitle()[pri:1, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:01 IST" name="loginPgTitle" finished-at="2024-01-14T15:43:04 IST" duration-ms="3207" status="PASS">
+        <test-method is-config="true" signature="doLogin()[pri:0, instance:com.qa.opencart.test.RegisterPageTest@78d9f51b]" started-at="2024-01-14T15:54:56 IST" name="doLogin" finished-at="2024-01-14T15:54:58 IST" duration-ms="2850" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPgTitle -->
-        <test-method signature="loginPgURLTest()[pri:2, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:04 IST" name="loginPgURLTest" finished-at="2024-01-14T15:43:05 IST" duration-ms="367" status="PASS">
+        </test-method> <!-- doLogin -->
+        <test-method signature="UserRegisterTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.opencart.test.RegisterPageTest@78d9f51b]" started-at="2024-01-14T15:54:58 IST" name="UserRegisterTest" data-provider="getUserRegData" finished-at="2024-01-14T15:55:21 IST" duration-ms="22135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Eshwari]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[K]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9900990099]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pass@123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPgURLTest -->
-        <test-method signature="forgotLinkTest()[pri:3, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:05 IST" name="forgotLinkTest" finished-at="2024-01-14T15:43:06 IST" duration-ms="934" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- forgotLinkTest -->
-        <test-method signature="isRegisterLink()[pri:4, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:06 IST" name="isRegisterLink" finished-at="2024-01-14T15:43:06 IST" duration-ms="239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isRegisterLink -->
-        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:06 IST" name="loginTest" finished-at="2024-01-14T15:43:13 IST" duration-ms="6789" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.qa.opencart.test.LoginPageTest.loginTest(LoginPageTest.java:62)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginPageTest@781711b7]" started-at="2024-01-14T15:43:14 IST" name="tearDown" finished-at="2024-01-14T15:43:16 IST" duration-ms="2510" status="PASS">
+        </test-method> <!-- UserRegisterTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.RegisterPageTest@78d9f51b]" started-at="2024-01-14T15:55:22 IST" name="tearDown" finished-at="2024-01-14T15:55:27 IST" duration-ms="5051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.opencart.test.LoginPageTest -->
-    </test> <!-- Login Page Test2 -->
-    <test started-at="2024-01-14T15:42:27 IST" name="Login Page Test" finished-at="2024-01-14T15:43:36 IST" duration-ms="69304">
+      </class> <!-- com.qa.opencart.test.RegisterPageTest -->
+    </test> <!-- RegisterPageTest -->
+    <test started-at="2024-01-14T15:54:33 IST" name="Login Page Test" finished-at="2024-01-14T15:55:54 IST" duration-ms="80897">
       <class name="com.qa.opencart.test.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:42:27 IST" name="setup" finished-at="2024-01-14T15:43:26 IST" duration-ms="59639" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.opencart.test.LoginPageTest@71cea1b8]" started-at="2024-01-14T15:54:33 IST" name="setup" finished-at="2024-01-14T15:55:41 IST" duration-ms="67760" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,23 +72,23 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginPgTitle()[pri:1, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:26 IST" name="loginPgTitle" finished-at="2024-01-14T15:43:26 IST" duration-ms="116" status="PASS">
+        <test-method signature="loginPgTitle()[pri:1, instance:com.qa.opencart.test.LoginPageTest@71cea1b8]" started-at="2024-01-14T15:55:41 IST" name="loginPgTitle" finished-at="2024-01-14T15:55:41 IST" duration-ms="507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPgTitle -->
-        <test-method signature="loginPgURLTest()[pri:2, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:26 IST" name="loginPgURLTest" finished-at="2024-01-14T15:43:26 IST" duration-ms="91" status="PASS">
+        <test-method signature="loginPgURLTest()[pri:2, instance:com.qa.opencart.test.LoginPageTest@71cea1b8]" started-at="2024-01-14T15:55:41 IST" name="loginPgURLTest" finished-at="2024-01-14T15:55:43 IST" duration-ms="1379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPgURLTest -->
-        <test-method signature="forgotLinkTest()[pri:3, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:26 IST" name="forgotLinkTest" finished-at="2024-01-14T15:43:27 IST" duration-ms="664" status="PASS">
+        <test-method signature="forgotLinkTest()[pri:3, instance:com.qa.opencart.test.LoginPageTest@71cea1b8]" started-at="2024-01-14T15:55:43 IST" name="forgotLinkTest" finished-at="2024-01-14T15:55:44 IST" duration-ms="1741" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotLinkTest -->
-        <test-method signature="isRegisterLink()[pri:4, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:27 IST" name="isRegisterLink" finished-at="2024-01-14T15:43:27 IST" duration-ms="269" status="PASS">
+        <test-method signature="isRegisterLink()[pri:4, instance:com.qa.opencart.test.LoginPageTest@71cea1b8]" started-at="2024-01-14T15:55:44 IST" name="isRegisterLink" finished-at="2024-01-14T15:55:45 IST" duration-ms="765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isRegisterLink -->
-        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:27 IST" name="loginTest" finished-at="2024-01-14T15:43:34 IST" duration-ms="6219" status="FAIL">
+        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.test.LoginPageTest@71cea1b8]" started-at="2024-01-14T15:55:45 IST" name="loginTest" finished-at="2024-01-14T15:55:51 IST" duration-ms="5553" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -137,11 +122,467 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginPageTest@7ae0cc89]" started-at="2024-01-14T15:43:34 IST" name="tearDown" finished-at="2024-01-14T15:43:36 IST" duration-ms="1708" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginPageTest@71cea1b8]" started-at="2024-01-14T15:55:52 IST" name="tearDown" finished-at="2024-01-14T15:55:54 IST" duration-ms="1985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.opencart.test.LoginPageTest -->
     </test> <!-- Login Page Test -->
+    <test started-at="2024-01-14T15:54:33 IST" name="Login Page Test2" finished-at="2024-01-14T15:56:17 IST" duration-ms="104347">
+      <class name="com.qa.opencart.test.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.opencart.test.LoginPageTest@3fa7df1]" started-at="2024-01-14T15:54:33 IST" name="setup" finished-at="2024-01-14T15:56:04 IST" duration-ms="91331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginPgTitle()[pri:1, instance:com.qa.opencart.test.LoginPageTest@3fa7df1]" started-at="2024-01-14T15:56:04 IST" name="loginPgTitle" finished-at="2024-01-14T15:56:05 IST" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPgTitle -->
+        <test-method signature="loginPgURLTest()[pri:2, instance:com.qa.opencart.test.LoginPageTest@3fa7df1]" started-at="2024-01-14T15:56:05 IST" name="loginPgURLTest" finished-at="2024-01-14T15:56:05 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPgURLTest -->
+        <test-method signature="forgotLinkTest()[pri:3, instance:com.qa.opencart.test.LoginPageTest@3fa7df1]" started-at="2024-01-14T15:56:05 IST" name="forgotLinkTest" finished-at="2024-01-14T15:56:06 IST" duration-ms="1257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotLinkTest -->
+        <test-method signature="isRegisterLink()[pri:4, instance:com.qa.opencart.test.LoginPageTest@3fa7df1]" started-at="2024-01-14T15:56:06 IST" name="isRegisterLink" finished-at="2024-01-14T15:56:06 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isRegisterLink -->
+        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.test.LoginPageTest@3fa7df1]" started-at="2024-01-14T15:56:06 IST" name="loginTest" finished-at="2024-01-14T15:56:14 IST" duration-ms="7980" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.qa.opencart.test.LoginPageTest.loginTest(LoginPageTest.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginPageTest@3fa7df1]" started-at="2024-01-14T15:56:15 IST" name="tearDown" finished-at="2024-01-14T15:56:17 IST" duration-ms="1976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.opencart.test.LoginPageTest -->
+    </test> <!-- Login Page Test2 -->
+    <test started-at="2024-01-14T15:54:33 IST" name="Login Page Test3" finished-at="2024-01-14T15:57:34 IST" duration-ms="181484">
+      <class name="com.qa.opencart.test.LoginPageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.opencart.test.LoginPageTest@f438904]" started-at="2024-01-14T15:54:33 IST" name="setup" finished-at="2024-01-14T15:57:34 IST" duration-ms="181345" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:148)
+at com.qa.opencart.factory.DriverFactory.initRemoteDriver(DriverFactory.java:104)
+at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:70)
+at com.qa.opencart.base.BaseTest.setup(BaseTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:410)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:366)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 25 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:393)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginPgTitle()[pri:1, instance:com.qa.opencart.test.LoginPageTest@f438904]" started-at="2024-01-14T15:57:34 IST" name="loginPgTitle" finished-at="2024-01-14T15:57:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:148)
+at com.qa.opencart.factory.DriverFactory.initRemoteDriver(DriverFactory.java:104)
+at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:70)
+at com.qa.opencart.base.BaseTest.setup(BaseTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:410)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:366)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 25 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:393)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPgTitle -->
+        <test-method signature="loginPgURLTest()[pri:2, instance:com.qa.opencart.test.LoginPageTest@f438904]" started-at="2024-01-14T15:57:34 IST" name="loginPgURLTest" finished-at="2024-01-14T15:57:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:148)
+at com.qa.opencart.factory.DriverFactory.initRemoteDriver(DriverFactory.java:104)
+at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:70)
+at com.qa.opencart.base.BaseTest.setup(BaseTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:410)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:366)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 25 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:393)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPgURLTest -->
+        <test-method signature="forgotLinkTest()[pri:3, instance:com.qa.opencart.test.LoginPageTest@f438904]" started-at="2024-01-14T15:57:34 IST" name="forgotLinkTest" finished-at="2024-01-14T15:57:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:148)
+at com.qa.opencart.factory.DriverFactory.initRemoteDriver(DriverFactory.java:104)
+at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:70)
+at com.qa.opencart.base.BaseTest.setup(BaseTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:410)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:366)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 25 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:393)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotLinkTest -->
+        <test-method signature="isRegisterLink()[pri:4, instance:com.qa.opencart.test.LoginPageTest@f438904]" started-at="2024-01-14T15:57:34 IST" name="isRegisterLink" finished-at="2024-01-14T15:57:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:148)
+at com.qa.opencart.factory.DriverFactory.initRemoteDriver(DriverFactory.java:104)
+at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:70)
+at com.qa.opencart.base.BaseTest.setup(BaseTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:410)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:366)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 25 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:393)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isRegisterLink -->
+        <test-method signature="loginTest()[pri:5, instance:com.qa.opencart.test.LoginPageTest@f438904]" started-at="2024-01-14T15:57:34 IST" name="loginTest" finished-at="2024-01-14T15:57:34 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'DHEEKSHIKA', ip: '172.18.112.1'
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:148)
+at com.qa.opencart.factory.DriverFactory.initRemoteDriver(DriverFactory.java:104)
+at com.qa.opencart.factory.DriverFactory.initDriver(DriverFactory.java:70)
+at com.qa.opencart.base.BaseTest.setup(BaseTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:410)
+at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:366)
+at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+... 25 more
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:393)
+... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginPageTest@f438904]" started-at="2024-01-14T15:57:34 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1705228054756" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.opencart.test.LoginPageTest -->
+    </test> <!-- Login Page Test3 -->
   </suite> <!-- Opencart App Test Regression Suite -->
 </testng-results>
