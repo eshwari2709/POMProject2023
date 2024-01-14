@@ -3,15 +3,28 @@
 <suite thread-count="1" parallel="tests" name="Failed suite [Opencart App Test Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
   <listeners>
     <listener class-name="com.qa.opencart.listeners.ExtendReportListener"/>
+    <listener class-name="com.qa.opencart.listeners.AllureReportListener"/>
   </listeners>
-  <test thread-count="1" parallel="tests" name="RegisterPageTest(failed)" verbose="4">
+  <test thread-count="1" parallel="tests" name="Login Page Test(failed)" verbose="4">
     <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.opencart.test.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.test.LoginPageTest -->
+    </classes>
+  </test> <!-- Login Page Test(failed) -->
+  <test thread-count="1" parallel="tests" name="RegisterPageTest(failed)" verbose="4">
+    <parameter name="browser" value="edge"/>
     <classes>
       <class name="com.qa.opencart.test.RegisterPageTest">
         <methods>
           <include name="doLogin"/>
           <include name="setup"/>
-          <include name="UserRegisterTest" invocation-numbers="0 1 2"/>
+          <include name="UserRegisterTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.test.RegisterPageTest -->

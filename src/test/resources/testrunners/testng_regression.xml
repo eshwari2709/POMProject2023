@@ -6,15 +6,15 @@
 		<listener class-name="com.qa.opencart.listeners.AllureReportListener"></listener>
 	</listeners>
 	
-<!--	<test name="Login Page Test">
+	<test name="Login Page Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.opencart.test.LoginPageTest" />
 		</classes>
-	</test>-->
+	</test>
 	
 	<test name="RegisterPageTest">
-		<parameter name="browser" value="chrome" />
+		<parameter name="browser" value="edge" />
 		<classes>
 			<class name="com.qa.opencart.test.RegisterPageTest" />
 		</classes>

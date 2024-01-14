@@ -23,6 +23,7 @@ public class OptionsManager {
 			co.addArguments("--headlesss");
 		if(Boolean.parseBoolean(prop.getProperty("incognito").trim()))
 			co.addArguments("--incognito");
+		co.setCapability("browserName", "chrome");
 		return co;
 		}
 	
@@ -34,6 +35,8 @@ public class OptionsManager {
 			eo.addArguments("--headlesss");
 		if(Boolean.parseBoolean(prop.getProperty("incognito").trim()))
 			eo.addArguments("--incognito");
+		co.setCapability("browserName", "edge");
+
 		return eo;
 		}
 	
@@ -44,6 +47,8 @@ public class OptionsManager {
 				fo.addArguments("--headlesss");
 			if(Boolean.parseBoolean(prop.getProperty("incognito").trim()))
 				fo.addArguments("--incognito");
+			co.setCapability("browserName", "firefox");
+
 			return fo;
 			}
 			

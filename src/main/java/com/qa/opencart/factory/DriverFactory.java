@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
@@ -14,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import Utilities.FrameworkException;
@@ -22,12 +25,10 @@ public class DriverFactory {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static OptionsManager optionsManager;
-	
-	//Thread local - Java
-	public static ThreadLocal<WebDriver>
-	tlDriver = new ThreadLocal<WebDriver>();
+	// Thread local - Java
+	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 	public static String highlight = null;
-	
+
 	/**
 	 * This method is used to launch the browser n the basis of given browserName
 	 * @param browserName
@@ -36,24 +37,43 @@ public class DriverFactory {
 	public static WebDriver initDriver(Properties prop) {
 		String browserName = prop.getProperty("browser"); // from config.properties
 		//String browserName = System.getProperty("browser")); //when run from maven input for different browser
+		
 		optionsManager = new OptionsManager(prop); // from OptionsManager.java
 		highlight = prop.getProperty("highlight");  //highlight on webelement Y/N
 		System.out.println("Your browser name is "+browserName);
+		
 		switch (browserName.toLowerCase().trim()) {
 		case "chrome":
-			//driver = new ChromeDriver(optionsManager.getChromeOptions());
-			//tlDriver.set(driver);
-			//or
-			tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
+			if (Boolean.parseBoolean(prop.getProperty("remote"))) 
+			{
+				//run it on grid:			
+				initRemoteDriver(browserName);
+			}else {
+				//run it on local:
+				tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
+			}
 			break;
 		case "firefox":
-			//driver = new FirefoxDriver(optionsManager.getFirefoxOptions());
-			tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
-
+			if (Boolean.parseBoolean(prop.getProperty("remote"))) 
+			{
+				//run it on grid:			
+				initRemoteDriver(browserName);
+			}else {
+				//run it on local:
+				tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
+				//driver = new ChromeDriver(optionsManager.getChromeOptions());
+				//tlDriver.set(driver);
+			}
 			break;
 		case "edge":
-			driver = new EdgeDriver();
-			tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
+			if (Boolean.parseBoolean(prop.getProperty("remote"))) 
+			{
+				//run it on grid:			
+				initRemoteDriver(browserName);
+			}else {	
+				//run it on local:
+				tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
+			}
 			break;
 		case "safari":
 			driver = new SafariDriver();
@@ -66,15 +86,44 @@ public class DriverFactory {
 		getDriver().get("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 		return getDriver();
 	}
-	
-	//Get the Thread local Driver 
-	public static WebDriver getDriver()
-	{
+
+	/**
+	 * to run on remote/grid
+	 * 
+	 * @param browserName
+	 */
+	private static void initRemoteDriver(String browserName) {
+		System.out.println("Running tests on Grid with browser: " + browserName);
+		try {
+			switch (browserName.toLowerCase().trim()) {
+			case "chrome":
+				/**
+				 * calling RemoteWebDriver constructor (URL, Capabilities) Capabilities -
+				 * information about which browser u want to run / headless / maximized etc.,
+				 */
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getChromeOptions()));
+				break;
+			case "edge":
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getChromeOptions()));
+				break;
+			case "firefox":
+				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getChromeOptions()));
+				break;
+			default:
+				System.out.println("Please pass valid browser : cannot find in remote machine");
+				break;
+			}
+		} catch (MalformedURLException e) {		}
+	}
+
+	// Get the Thread local Driver
+	public static WebDriver getDriver() {
 		return tlDriver.get();
 	}
 
 	/**
 	 * This method is used to retrieve properties input from config file
+	 * 
 	 * @return this returns property value requested by sending 'key'
 	 */
 	public Properties initProp() {
@@ -102,7 +151,6 @@ public class DriverFactory {
 					throw new FrameworkException("Wrong Env Name: " + envName);
 				}
 		} catch (FileNotFoundException e) {
-
 		}
 		try {
 			prop.load(ip);
@@ -112,27 +160,23 @@ public class DriverFactory {
 		}
 		return prop;
 	}
-	/**** Take Screenshots
-	 * Implemented in ExtendReportListener.java
+
+	/****
+	 * Take Screenshots Implemented in ExtendReportListener.java
+	 * 
 	 * @param methodName
 	 * @return
 	 */
-	
 	public static String getScreenshot(String methodName) {
-		
 		File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
-		
-		String path = System.getProperty("user.dir") + "/screenshot/" + methodName + "_" + System.currentTimeMillis()+".png";
-				
+		String path = System.getProperty("user.dir") + "/screenshot/" + methodName + "_" + System.currentTimeMillis()
+				+ ".png";
 		File destination = new File(path);
-		
 		try {
 			FileHandler.copy(srcFile, destination);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 		return path;
 	}
-
 }

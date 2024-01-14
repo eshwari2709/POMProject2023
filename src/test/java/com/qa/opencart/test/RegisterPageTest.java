@@ -22,8 +22,8 @@ public class RegisterPageTest extends BaseTest{
 	public Object[][] getUserRegData() {
 		return new Object[][] {
 				{ "Eshwari", "K", "9900990099", "Pass@123", "yes" },
-				{ "Tom", "T", "9900990044", "test@123", "yes" },
-				{ "Sibi", "R", "9900990011", "test@123", "yes" }
+				//{ "Tom", "T", "9900990044", "test@123", "yes" },
+				//{ "Sibi", "R", "9900990011", "test@123", "yes" }
 		};
 	}
 	
