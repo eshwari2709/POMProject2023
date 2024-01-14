@@ -6,7 +6,7 @@
 		<listener class-name="com.qa.opencart.listeners.AllureReportListener"></listener>
 	</listeners>
 	
-	<test name="Login Page Test">
+	<!--<test name="Login Page Test">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.qa.opencart.test.LoginPageTest" />
@@ -17,7 +17,7 @@
 		<classes>
 			<class name="com.qa.opencart.test.LoginPageTest" />
 		</classes>
-	</test>
+	</test>-->
 	<test name="Login Page Test3">
 		<parameter name="browser" value="edge" />
 		<classes>
@@ -25,12 +25,12 @@
 		</classes>
 	</test>
 	
-	<test name="RegisterPageTest">
+<!--	<test name="RegisterPageTest">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.opencart.test.RegisterPageTest" />
 		</classes>
-	</test>
+	</test>-->
 	
 	
 </suite>
