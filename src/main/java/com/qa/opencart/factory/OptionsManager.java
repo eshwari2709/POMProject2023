@@ -49,7 +49,7 @@ public class OptionsManager {
 			if(Boolean.parseBoolean(prop.getProperty("incognito").trim()))
 				fo.addArguments("--incognito");
 			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
-				co.setCapability("browserName", "firefox");
+				fo.setCapability("browserName", "firefox");
 			}
 			return fo;
 			}			
