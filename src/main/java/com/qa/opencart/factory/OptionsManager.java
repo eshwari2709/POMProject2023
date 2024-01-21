@@ -38,6 +38,7 @@ public class OptionsManager {
 			eo.addArguments("--incognito");
 		if(Boolean.parseBoolean(prop.getProperty("remote"))) {
 			eo.setCapability("browserName", "edge");
+			
 			}
 		return eo;
 		}
