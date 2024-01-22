@@ -5,16 +5,16 @@
     <listener class-name="com.qa.opencart.listeners.ExtendReportListener"/>
     <listener class-name="com.qa.opencart.listeners.AllureReportListener"/>
   </listeners>
-  <test thread-count="4" parallel="tests" name="Login Page Test3(failed)" verbose="4">
-    <parameter name="browser" value="edge"/>
+  <test thread-count="4" parallel="tests" name="RegisterPageTest(failed)" verbose="4">
     <classes>
-      <class name="com.qa.opencart.test.LoginPageTest">
+      <class name="com.qa.opencart.test.RegisterPageTest">
         <methods>
+          <include name="doLogin"/>
           <include name="setup"/>
-          <include name="loginTest"/>
+          <include name="UserRegisterTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.opencart.test.LoginPageTest -->
+      </class> <!-- com.qa.opencart.test.RegisterPageTest -->
     </classes>
-  </test> <!-- Login Page Test3(failed) -->
+  </test> <!-- RegisterPageTest(failed) -->
 </suite> <!-- Failed suite [Opencart App Test Regression Suite] -->

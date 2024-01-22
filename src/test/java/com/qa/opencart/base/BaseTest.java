@@ -29,7 +29,6 @@ public class BaseTest {
 	
 	@Parameters({"browser"})
 	@BeforeTest
-	//public void setup()
 	public void setup(String browserName)
 	{
 		df = new DriverFactory();
